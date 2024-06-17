@@ -1,0 +1,42 @@
+body,
+html {
+    height: 100%;
+}
+
+
+.img-backgroid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Coloca la imagen detrás del chat */
+}
+
+
+.app-chat {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+    z-index: 1000;
+}
+
+.app-chat-history {
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    width: 100%;
+}
+
+.chat-history-body {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.chat-history-footer {
+    padding: 10px;
+}
